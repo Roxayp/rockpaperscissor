@@ -1,0 +1,16 @@
+h1, h3 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.gameplay {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.results {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}

@@ -5,10 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
-    <h1>Entirely played in the console</h1>
+    <br>
+    <div class="container gameplay">
+        <h3>Choose Your Weapon!</h3>
+        <br><br>
+        <div class="row weapons">
+            <div class="col-md-3">
+                <!-- leave empty -->
+            </div>
+            <div class="col-md-2 weapon">
+                <img src="images/rock.png" alt="rock" id="rock"><br><br>
+                <button id="0" class="btn btn-primary" onclick="playGame(0)">Rock</button>
+            </div>
+            <div class="col-md-2 weapon">
+                <img src="images/paper.png" alt="paper" id="paper"><br><br>
+                <button id="1" class="btn btn-primary" onclick="playGame(1)">Paper</button>
+            </div>
+            <div class="col-md-2 weapon">
+                <img src="images/scissors.png" alt="scissors" id="scissors"><br><br>
+                <button id="2" class="btn btn-primary" onclick="playGame(2)">Scissors</button>
+            </div>
+            <div class="col-md-3">
+                <!-- leave empty -->
+            </div>    
+        </div>
+    </div>
+    <br><br><br>
+    <div class="container results">
+        <h3>Results</h3>
+        <br><br>
+        <div class="row">
+            <div class="col-md-1">
+                <!-- leave empty -->
+            </div>
+            <div class="col-md-3">
+                <!-- Player choice -->
+                <h4>Player choice</h4>
+                <!-- show player choice image -->
+                <img src="" alt="player choice" id="playerChoice">
+            </div>
+            <div class="col-md-4">
+                <!-- Results -->
+                <br><br>
+                <h4>Round Result</h4><br>
+                <h4 id="roundResult"></h4>
+                <h4>Game Score</h4><br>
+                <h4 id="gameResult"></h4>
+                <h4>Round Count</h4><br>
+                <h4 id="roundCount"></h4>
+
+            </div>
+            <div class="col-md-3">
+                <!-- Computer choice -->
+                <h4>Computer choice</h4>
+                <!-- show computer choice image -->
+                <img src="" alt="computer choice" id="computerChoice">
+            </div>
+            <div class="col-md-1">
+                <!-- leave empty -->
+            </div>
+        </div>
+    </div>
+
+    
 </body>
 </html>
