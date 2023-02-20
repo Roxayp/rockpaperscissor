@@ -12,24 +12,26 @@
 <body>
     <h1>Rock Paper Scissors</h1>
     <br>
-    <div class="container gameplay">
+    <div class="container gameplay move">
         <h3>Choose Your Weapon!</h3>
+        <br><br>
+        <div class="movesleft">Moves Left: 5 </div>
         <br><br>
         <div class="row weapons">
             <div class="col-md-3">
                 <!-- leave empty -->
             </div>
-            <div class="col-md-2 weapon">
+            <div class="col-md-2">
                 <img src="images/rock.png" alt="rock" id="rock"><br><br>
-                <button id="0" class="btn btn-primary" onclick="playGame(0)">Rock</button>
+                <button id="0" class="btn btn-primary weapon rock" onclick="playGame(0)">Rock</button>
             </div>
-            <div class="col-md-2 weapon">
+            <div class="col-md-2">
                 <img src="images/paper.png" alt="paper" id="paper"><br><br>
-                <button id="1" class="btn btn-primary" onclick="playGame(1)">Paper</button>
+                <button id="1" class="btn btn-primary weapon paper" onclick="playGame(1)">Paper</button>
             </div>
-            <div class="col-md-2 weapon">
+            <div class="col-md-2">
                 <img src="images/scissors.png" alt="scissors" id="scissors"><br><br>
-                <button id="2" class="btn btn-primary" onclick="playGame(2)">Scissors</button>
+                <button id="2" class="btn btn-primary weapon scissors" onclick="playGame(2)">Scissors</button>
             </div>
             <div class="col-md-3">
                 <!-- leave empty -->
@@ -54,11 +56,11 @@
                 <!-- Results -->
                 <br><br>
                 <h4>Round Result</h4><br>
-                <h4 id="roundResult"></h4>
-                <h4>Game Score</h4><br>
-                <h4 id="gameResult"></h4>
-                <h4>Round Count</h4><br>
-                <h4 id="roundCount"></h4>
+                <h4 class="result"></h4>
+                <h4>Player Score</h4><br>
+                <h4 class="playerScore"></h4>
+                <h4>Computer Score</h4><br>
+                <h4 iclass="computerScore"></h4>
 
             </div>
             <div class="col-md-3">
