@@ -15,7 +15,7 @@ const game = () => {
             option.addEventListener('click', function(){
                 const movesLeft = document.querySelector('.movesLeft');
                 moves++;
-                movesLeft.innerText = 'Moves Left: ${5 - moves}';
+                movesLeft.innerText = `Moves Left: ${5-moves}`;
 
                 const choiceNumber = Math.floor(Math.random() * 3);
                 const computerChoice = computerOptions[choiceNumber];
@@ -31,36 +31,38 @@ const game = () => {
         const result = document.querySelector('.result');
         const playerScoreBoard = document.querySelector('.playerScore');
         const computerScoreBoard = document.querySelector('.computerScore');
-        const img = document.createElement('img');
+        const imgP = document.createElement('img');
+        const imgC = document.createElement('img');
 
         player = player.toLowerCase();
         computer = computer.toLowerCase();
+        
         if (player == 'rock'){
-            img.src = 'images/rock.png';
+            imgP.src = 'images/rock.png';
             const src = document.getElementById('plChoice');
-            src.appendChild(img);
+            src.appendChild(imgP);
         }else if (player == 'paper'){
-            img.src = 'images/paper.png';
+            imgP.src = 'images/paper.png';
             const src = document.getElementById('plChoice');
-            src.appendChild(img);
+            src.appendChild(imgP);
         }else{
-            img.src = 'images/scissors.png';
+            imgP.src = 'images/scissors.png';
             const src = document.getElementById('plChoice');
-            src.appendChild(img);
+            src.appendChild(imgP);
         }
 
         if (computer == 'rock'){
-            img.src = 'images/rock.png';
+            imgC.src = 'images/rock.png';
             const src = document.getElementById('cpChoice');
-            src.appendChild(img);
+            src.appendChild(imgC);
         }else if (computer == 'paper'){
-            img.src = 'images/paper.png';
+            imgC.src = 'images/paper.png';
             const src = document.getElementById('cpChoice');
-            src.appendChild(img);
+            src.appendChild(imgC);
         }else{
-            img.src = 'images/scissors.png';
+            imgC.src = 'images/scissors.png';
             const src = document.getElementById('cpChoice');
-            src.appendChild(img);
+            src.appendChild(imgC);
         }
 
         if(player === computer){
@@ -70,30 +72,36 @@ const game = () => {
                 result.textContent = 'Computer Wins!';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
+                playerScoreBoard.textContent = playerScore;
             }else{
                 result.textContent = 'Player Wins!';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
+                computerScoreBoard.textContent = computerScore;
             }
         }else if(player == 'scissors'){
             if(computer == 'rock'){
                 result.textContent = 'Computer Wins!';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
+                playerScoreBoard.textContent = playerScore;
             }else{
                 result.textContent = 'Player Wins!';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
+                computerScoreBoard.textContent = computerScore;
             }
         }else if(player == 'paper'){
             if(computer == 'scissors'){
                 result.textContent = 'Computer Wins!';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
+                playerScoreBoard.textContent = playerScore;
             }else{
                 result.textContent = 'Player Wins!';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
+                computerScoreBoard.textContent = computerScore;
             }
         }
     }

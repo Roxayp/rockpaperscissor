@@ -1,9 +1,27 @@
+body {
+    background-color : #E5E3E4;
+    font-family: 'Open Sans', sans-serif;
+}
 h1, h3 {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+    color: #469597;
+}
+
+
+.btn-primary {
+    background-color: #DDBEAA;
+    color: black;
+    border: 1px solid #5BA199;
 }
 
 .gameplay {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.reload {
     align-items: center;
     align-content: center;
     text-align: center;
@@ -13,4 +31,13 @@ h1, h3 {
     align-items: center;
     align-content: center;
     text-align: center;
+}
+.res {
+    border:8px solid #5BA199;
+    margin:3px;
+}
+
+.cpChoice, .plChoice {
+    align-items: center;
+    max-width: max-content;
 }

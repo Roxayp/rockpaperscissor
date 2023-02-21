@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
@@ -15,23 +15,23 @@
     <div class="container gameplay move">
         <h3>Choose Your Weapon!</h3>
         <br><br>
-        <div class="movesleft moves">Moves Left: 5 </div>
+        <div class="movesLeft moves">Moves Left: 5 </div>
         <br><br>
-        <div class="row weapons">
+        <div class="row options">
             <div class="col-md-3">
                 <!-- leave empty -->
             </div>
             <div class="col-md-2">
-                <img src="images/rock.png" alt="rock" id="rock"><br><br>
-                <button class="btn btn-primary weapon rock">Rock</button>
+                <img src="images/rock.png" alt="rock"><br><br>
+                <button class="btn btn-primary option rock">Rock</button>
             </div>
             <div class="col-md-2">
-                <img src="images/paper.png" alt="paper" id="paper"><br><br>
-                <button class="btn btn-primary weapon paper">Paper</button>
+                <img src="images/paper.png" alt="paper"><br><br>
+                <button class="btn btn-primary option paper">Paper</button>
             </div>
             <div class="col-md-2">
-                <img src="images/scissors.png" alt="scissors" id="scissors"><br><br>
-                <button class="btn btn-primary weapon scissors">Scissors</button>
+                <img src="images/scissors.png" alt="scissors"><br><br>
+                <button class="btn btn-primary option scissors">Scissors</button>
             </div>
             <div class="col-md-3">
                 <!-- leave empty -->
@@ -46,13 +46,13 @@
             <div class="col-md-1">
                 <!-- leave empty -->
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 res">
                 <!-- Player choice -->
-                <h4>Player choice</h4>
+                <h4>Player choice</h4><br>
                 <!-- show player choice image -->
-                <div id="plChoice"></div>
+                <div id="plChoice"></div><br>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 res">
                 <!-- Results -->
                 <br><br>
                 <h4>Round Result</h4><br>
@@ -60,23 +60,24 @@
                 <h4>Player Score</h4><br>
                 <h4 class="playerScore"></h4>
                 <h4>Computer Score</h4><br>
-                <h4 iclass="computerScore"></h4>
+                <h4 class="computerScore"></h4>
 
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 res">
                 <!-- Computer choice -->
-                <h4>Computer choice</h4>
+                <h4>Comp choice</h4><br>
                 <!-- show computer choice image -->
-                <div id="cpChoice"></div>
+                <div id="cpChoice"></div><br>
             </div>
             <div class="col-md-1">
                 <!-- leave empty -->
             </div>
         </div>
     </div>
-    <br><br><br>
-    <btn class="btn btn-primary reload">Reload Game</btn>
+    <br><br>
+    <btn class="btn btn-primary reload form-control">Reload Game</btn>
+    <br><br>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
