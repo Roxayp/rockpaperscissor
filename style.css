@@ -36,8 +36,15 @@ h1, h3 {
     border:8px solid #5BA199;
     margin:3px;
 }
-
+.liner {
+    font-weight: bolder;
+    background-color: #5BA199;
+    border-radius: 10px;
+}
 .cpChoice, .plChoice {
     align-items: center;
     max-width: max-content;
+}
+.btn-success {
+    background-color: #469597 !important;
 }
